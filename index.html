@@ -481,13 +481,22 @@
         </table>
     <script>
       const celulas = document.querySelectorAll("td");
-      for (let c = 0; c < celulas.length -1 ; c++) {
+      for (let c = 0; c < celulas.length -1 ; c++) 
+      {
         const element = celulas[c];
       
         if( !( element.classList.contains('parede') ) && !( element.classList.contains('tesouros') ) && !( element.classList.contains('orcs') ) )
         {
           element.classList.add('parede');
         }
+       
+      }
+      
+      function clickClasse(event) 
+      {
+        let target = event.target;
+        console.log("Classe Clicada: ", target.classList.value); 
+
       }
     </script>
 </body>
