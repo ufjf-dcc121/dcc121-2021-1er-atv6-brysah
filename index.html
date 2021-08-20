@@ -499,18 +499,25 @@
         if( target.classList.contains('parede')  )
         {
           target.classList.remove('parede');
+          console.log(" Nova Classe Clicada: ", target.classList.value); 
         }
         else if( target.classList.contains('orcs') )
         {
           target.classList.remove('orcs');
           target.classList.add('tesouros');
+          console.log(" Nova Classe Clicada: ", target.classList.value); 
         }
         else if( target.classList.contains('tesouros') )
         {
           target.classList.remove('tesouros');
           target.classList.add('parede');
+          console.log(" Nova Classe Clicada: ", target.classList.value); 
         } 
-        else target.classList.add('orcs');
+        else 
+          {
+            target.classList.add('orcs');
+          console.log(" Nova Classe Clicada: ", target.classList.value); 
+          }
       }
     </script>
 </body>
