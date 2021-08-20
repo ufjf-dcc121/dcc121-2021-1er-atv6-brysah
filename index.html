@@ -496,6 +496,10 @@
       {
         let target = event.target;
         console.log("Classe Clicada: ", target.classList.value); 
+        if( target.classList.contains('parede')  )
+        {
+          target.classList.remove('parede');
+        }
 
       }
     </script>
